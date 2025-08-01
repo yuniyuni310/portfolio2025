@@ -1,0 +1,218 @@
+/* 언어설정 */
+@charset 'UTF-8';
+/* 전체설정 */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: bottom;
+}
+
+/* 레이아웃설정 */
+#wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.box1 {
+  width: 100%;
+  order: 1;
+}
+.box2 {
+  width: 60%;
+  order: 2;
+}
+.box3 {
+  width: 40%;
+  order: 3;
+}
+.box4 {
+  width: 100%;
+  order: 4;
+}
+.box5 {
+  width: 100%;
+  order: 5;
+}
+.box6 {
+  width: 100%;
+  order: 6;
+}
+.box7 {
+  width: 100%;
+  order: 7;
+}
+.box8 {
+  width: 100%;
+  order: 8;
+}
+.box9 {
+  width: 100%;
+  order: 9;
+}
+
+/* logo와 gnb의 가로정렬 */
+.boxA {display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;}
+.boxA>div {width: auto;}
+
+/* 공지사항 가로정렬 */
+.box2 {display: flex;
+      flex-direction: row;}
+.box2-1 {width: 20%;}
+.box2-2 {width: 80%;}
+
+/* 주민증 가로정렬 */
+.box3 {display: flex;}
+.box3-1 {width: 50%;}
+.box3-2 {width: 50%;}
+
+/*독도관리사무소가로정렬 */
+.box4 {display: flex;}
+.box4-1 {width: 50%;}
+.box4-2 {width: 50%;}
+
+/* 갤러리가로정렬 */
+.box5 {display: flex;}
+.box5-1 {width: 20%;}
+.box5-2 {width: 80%;}
+
+/*명예주민증 센터정렬 */
+.box6 {display: flex;
+      justify-content: center;
+    align-items: center;}
+.box6-1 {width: 80%;
+        }
+
+  /*독도입도신청  */
+  .box7{display: flex;
+    flex-wrap: wrap;}
+  .box7-1 {width: 100%;}
+  .box7-2 {width: 55%;}
+  .box7-3 {width: 45%;}
+
+  /* 리뷰설정 위아래정렬*/
+  .box8 {display: flex;
+        flex-direction: column;}
+  .box8-1 {width: 100%;}
+  .box8-2 {width: 100%;}
+
+  /* 독도위치정보설정 */
+  .box9 {display: flex;
+        flex-wrap: wrap;}
+  .box9-1 {width: 100%;}
+  .box9-2 {width: 60%;}
+  .box9-3 {width: 40%;}
+
+/* 카피라이트센터정렬 */
+.boxC {display: flex;
+      justify-content: center;
+      align-items: center;}
+.boxC-1 {width: 80%;}
+
+/* 상세설정!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* 로고설정 */
+.logo{font-size: 30px;}
+.logo a{display: flex;
+      justify-content: center;
+    align-items: center;}
+.logo a:hover{opacity: 0.7;}
+
+/* 유틸리티설정 */
+.util {position: absolute;
+top: 10px;
+right: 10px;}
+.util ul {display: flex;}
+.util ul li{}
+.util ul li a{display: block;
+            font-size: 12px;
+           padding: 5px; }
+/* gnb 설정 */
+.gnb {}
+.gnb ul{display: flex;}
+.gnb ul li{}
+.gnb ul li a{display: block;
+            font-size: 18px;
+            padding: 10px;}
+
+
+
+
+/* 미디어쿼리구간###################################################### */
+
+/* 모바일구간 */
+@media (max-width: 599px) {
+    .box2 {
+        width: 100%;
+        order: 2;
+      }
+    .box3 {
+   display: none;
+      }
+      .box4 {
+        width: 100%;
+        order: 3;
+      }
+      .box5 {
+        width: 100%;
+        order: 6;
+      }
+      .box6 {
+        width: 100%;
+        order: 5;
+      }
+      .box7 {
+        width: 100%;
+        order: 4;
+      }
+      .box8 {
+        width: 100%;
+        order:7;
+      }
+      .box9 {
+        width: 100%;
+        order: 8;
+      }
+
+
+
+      /* logo와 gnb의 가로정렬 */
+.boxA {
+  justify-content: center;
+  flex-direction: column;}
+.boxA>div {width: 100%;}
+
+/* 공지사항 가로정렬 */
+.box2 {display: flex;
+  flex-direction:column;}
+.box2-1 {width: 100%;}
+.box2-2 {width: 100%;}
+ 
+/* gnb설정 */
+.gnb ul {justify-content: center;}
+.gnb ul li a{display: block;
+  font-size: 12px;
+  padding: 7px 5px;}
+
+
+
+} /*599px 이하설정완료구간*/
+/* 태블릿구간 */
+@media (min-width: 768px) {
+} /*768px 이상설정완료구간*/
+
+/* PC용 구간 */
+@media (min-width: 960px) {
+}

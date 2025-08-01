@@ -1,0 +1,795 @@
+/* 언어설정 */
+@charset 'UTF-8';
+/* 전체설정 */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: bottom;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* 레이아웃설정 */
+#wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.box1 {
+  width: 100%;
+  order: 1;
+}
+
+.boxD {
+  width: 100%;
+  order: 2;
+}
+/* .box2 {
+  width: 60%;
+  order: 2;
+}
+.box3 {
+  width: 40%;
+  order: 3;
+} */
+.box4 {
+  width: 100%;
+  order: 4;
+}
+.box5 {
+  width: 100%;
+  order: 5;
+}
+.box6 {
+  width: 100%;
+  order: 6;
+}
+.box7 {
+  width: 100%;
+  order: 7;
+}
+.box8 {
+  width: 100%;
+  order: 8;
+}
+.box9 {
+  width: 100%;
+  order: 9;
+}
+
+/* logo와 gnb의 가로정렬 */
+.boxA-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+.boxA > div {
+  width: auto;
+}
+
+/* 공지사항 가로정렬 */
+.box2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.box2-1 {
+  width: 20%;
+}
+.box2-2 {
+  width: 80%;
+}
+
+/* 주민증 가로정렬 */
+.box3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*독도관리사무소가로정렬 */
+.box4 {
+  display: flex;
+}
+.box4-1 {
+  width: 50%;
+}
+.box4-2 {
+  width: 50%;
+}
+
+/* 갤러리가로정렬 */
+.box5-inner {
+  display: flex;
+}
+.box5-1 {
+  width: 20%;
+}
+.box5-2 {
+  width: 80%;
+}
+
+/*명예주민증 센터정렬 */
+.box6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box6-1 {
+  width: 80%;
+}
+
+/*독도입도신청  */
+.box7 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box7-1 {
+  width: 100%;
+}
+.box7-2 {
+  width: calc(55% - 10px);
+  margin-right: 10px;
+}
+.box7-3 {
+  width: 45%;
+}
+
+/* 리뷰설정 위아래정렬*/
+.box8-inner {
+  display: flex;
+  flex-direction: column;
+}
+.box8-1 {
+  width: 100%;
+}
+.box8-2 {
+  width: 100%;
+}
+
+/* 독도위치정보설정 */
+.box9 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box9-1 {
+  width: 100%;
+}
+.box9-2 {
+  width: calc(60% - 50px)
+}
+.box9-3 {
+  width: 40%;
+}
+
+/* 카피라이트센터정렬 */
+.boxC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxC-1 {
+  width: 80%;
+}
+
+/* 상세설정!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* 헤더고정시키기 */
+.boxA {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 150px;
+}
+/* 로고설정 */
+.logo {
+  font-size: 30px;
+}
+.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo a:hover {
+  opacity: 0.7;
+}
+
+/* 유틸리티설정 */
+.util {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.util ul {
+  display: flex;
+}
+.util ul li {
+}
+.util ul li a {
+  display: block;
+  font-size: 12px;
+  padding: 5px;
+}
+/* gnb 설정 */
+.gnb {
+}
+.gnb ul {
+  display: flex;
+}
+.gnb ul li {
+}
+.gnb ul li a {
+  display: block;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/*슬로건 설정하기 */
+.box1 {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(../img/slide_001.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+
+}
+.box1-1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.slogon {
+  width: 100%;
+}
+.slogon h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.slogon p {
+  font-size: 20px;
+}
+.slogon p b {
+}
+
+/* 공지사항과 주민증 가로정렬 */
+.boxD {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.box2 {
+  width: 60%;
+  background-color: #ccc;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.box3 {
+  width: 40%;
+  background-color: #aaa;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+/* 추가작업 */
+.box2-inner {display: flex;
+  width: calc(1200px * 0.6);
+  margin-left: auto;}
+
+
+.box2-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice_title,
+.people_title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.box2-2 {
+  font-size: 14px;
+}
+.box3-2 .more {
+}
+.box3-2 .more a {
+  display: block;
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 20px;
+}
+/* 독도관리사무소소개 설정 */
+
+.box4 {
+  padding: 40px 0;
+}
+.box4-1 {
+  width: 640px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box4-1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.box4-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 40px;
+}
+.info_txt {
+}
+.info_txt h3 {
+  font-size: 28px;
+  color: #262262;
+  margin-bottom: 30px;
+}
+.info_txt p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.info_txt p.more {
+  text-align: center;
+}
+.info_txt p.more a {
+  display: inline-block;
+  background-color: #262262;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+.info_txt p.more a:hover {
+  opacity: 0.7;
+}
+
+/* 갤러리설정 */
+
+.box5 {
+  background-color: rgba(42, 60, 157, 0.3);
+  padding: 40px 0;
+}
+.gallery_title {
+  font-size: 18px;
+}
+.gallery_title em {
+  display: inline-block;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  border-bottom: 3px solid #262262;
+}
+.gallery_list {
+  display: flex;
+  align-items: flex-end;
+}
+.gallery_btn {
+  margin-right: 10px;
+}
+.gallery_btn ul {
+}
+.gallery_btn li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #262262;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.gallery_listBox {
+}
+.gallery_listBox ul {
+  display: flex;
+}
+.gallery_listBox ul li {
+  cursor: pointer;
+  width: 340px;
+  height: 380px;
+  background-color: aquamarine;
+  margin-right: 10px;
+}
+
+/* 독도명예주민증설정 */
+.box6 {
+  height: 600px;
+  background-color: #333;
+}
+.box6-1 {
+  text-align: center;
+  color: #fff;
+}
+.card_title {
+  font-size: 38px;
+  margin-bottom: 80px;
+}
+.card_txt {
+  font-size: 20px;
+}
+.card_txt span {
+  color: #8798f6;
+  font-size: 26px;
+  font-weight: bold;
+}
+.box6-1 .more {
+  margin-top: 50px;
+}
+.box6-1 .more a {
+  display: inline-block;
+  background-color: #fff;
+  color: #262262;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* 독도입도신청설정 */
+.box7 {
+  padding-top: 50px;
+}
+.come_title {
+  font-size: 18px;
+  color: #262262;
+  margin-bottom: 20px;
+}
+.come_title em {
+  display: inline-block;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  border-bottom: 3px solid #262262;
+}
+
+.box7-2-1 {
+  background-color: #aaa;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box7-2-2 {
+  background-color: #ccc;
+  border-radius: 5px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.warning {
+}
+.warning h3 {
+  color: #ff0000;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.warning ul {
+}
+.warning ul li {
+  font-size: 14px;
+  padding: 5px;
+  color: #fff;
+}
+.warning i {
+  font-size: 5px;
+  vertical-align: top;
+  padding-top: 7px;
+  margin-right: 5px;
+}
+
+/* 예약폼 설정 */
+.reservation {
+}
+.reservation form {
+}
+.reservation form ul {
+}
+.reservation form ul li {
+  padding: 10px;
+}
+.reservation form ul li span {
+  display: block;
+  font-size: 12px;
+  color: #262262;
+}
+.reservation form ul li span i {
+  font-size: 5px;
+  vertical-align: top;
+  padding-top: 6px;
+  margin-right: 5px;
+}
+
+.reservation div {
+  display: flex;
+  justify-content: center;
+}
+.reservation div p {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.reservation input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.reservation select {
+  width: 150px;
+  padding: 5px;
+  font-size: 18px;
+}
+.reservation input[type="text"] {
+  width: 150px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.reservation label {
+  margin-right: 10px;
+}
+
+.reservation li:last-child {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reservation input[type="submit"] {
+  width: 180px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #262262;
+  color: #fff;
+  border: 2px solid #262262;
+  border-radius: 10px;
+}
+.reservation input[type="reset"] {
+  width: 180px;
+  padding: 10px;
+  font-size: 18px;
+  background-color:#fff;
+  color: #262262;
+  border: 2px solid #262262;
+  
+  border-radius: 10px;
+}
+
+/* 예약달력설정 */
+.box7-3 {height: 540px;
+        background-color: #999;
+        border-radius: 5px;}
+.calender {}
+.calender p{  color: #ff0000;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 20px;}
+.calender .date{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  background-color: #fff;
+}
+
+
+/* 리뷰 설정 */
+.box8 {height: 100vh;
+      margin-top: 50px;
+      background-color: #8798f6;}
+
+.box8-1 {}
+.review_list {}
+.review_list ul{display: flex;
+              justify-content: space-between;}
+.review_list ul li{
+  width: 200px;
+  height: 600px;
+  background-color: #ccc;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px #333;
+}
+.review_list ul li:nth-child(1) {background-image: url(../img/review_001.jpg);}
+
+.review_list ul li a{}
+
+.review_list .imgBox img:nth-child(1) {height: 100%;
+                                      width: auto;}
+
+
+.box8-2 {margin-top: 150px;}                                     
+.review_title {text-align: center;
+            color: #fff;}
+.review_title h3{font-size: 38px;}
+.review_title h3 span{font-size: 60px;
+                display: inline-block;
+               
+              position: relative;}
+.review_title i {position: absolute;
+                font-size: 16px;
+                top: -16px;}
+.review_title i:nth-child(1) {
+  left: 18px;
+  animation: ani 0.5s infinite alternate;
+  }
+.review_title i:nth-child(2) {
+  right: 20px;
+  animation: ani 0.5s 0.5s infinite alternate;
+  }
+.review_title p{}
+
+
+/* 독도 위의 점 애니매이션 만들기 */
+@keyframes ani {
+  0% {top: -16px;}
+  100% {top: -25px;}
+}
+
+
+
+
+/* 독도지도설정 */
+.box9{height: 600px; /*임시설정*/
+  
+    padding-top: 50px;}
+
+.map_title {font-size: 18px;}
+.map_title em { display: inline-block;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  border-bottom: 3px solid #262262;}
+
+.box9-2 {height: 500px;
+      background-color: antiquewhite;
+    border-radius: 10px;}
+
+.google_map {width: 100%;
+            height: 100%;
+          border-radius: 10px;
+          overflow: hidden;}
+.google_map iframe {width: 100%;
+                  height: 100%;}
+
+.box9-3 {margin-left: 50px;}
+.box9-3-1 {background-color: #fff;
+          border-radius: 10px;
+          padding: 20px;}
+.map_info h3 {font-size: 20px;
+            margin-bottom: 10px;}
+.map_info ul {}
+.map_info ul li {font-size: 14px;
+                margin-bottom: 5px;}
+
+.box9-3-2 {background-color: bisque;
+          border-radius: 10px;
+          margin-top: 20px;}
+.map_img {width: 100%;
+         height: 250px;
+          border-radius: 10px;
+          overflow: hidden; }
+.map_img img{width: 100%;
+          transform: translateY(-80px);}
+
+
+
+
+/* 전체사이즈설정 */
+.boxA-inner
+, .box1-1 , .box4 ,.box5-inner , .box7
+, .box8-inner, .box9
+ {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+} 
+
+/* 미디어쿼리구간###################################################### */
+
+/* 모바일구간 */
+@media (max-width: 599px) {
+  .box2 {
+    width: 100%;
+    order: 2;
+  }
+  .box3 {
+    display: none;
+  }
+  .box4 {
+    width: 100%;
+    order: 3;
+  }
+  .box5 {
+    width: 100%;
+    order: 6;
+  }
+  .box6 {
+    width: 100%;
+    order: 5;
+  }
+  .box7 {
+    width: 100%;
+    order: 4;
+  }
+  .box8 {
+    width: 100%;
+    order: 7;
+  }
+  .box9 {
+    width: 100%;
+    order: 8;
+  }
+
+  /* logo와 gnb의 가로정렬 */
+  .boxA {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .boxA > div {
+    width: 100%;
+  }
+
+  /* 공지사항 가로정렬 */
+  .box2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .box2-1 {
+    width: 100%;
+  }
+  .box2-2 {
+    width: 100%;
+  }
+
+  /* gnb설정 */
+  .gnb ul {
+    justify-content: center;
+  }
+  .gnb ul li a {
+    display: block;
+    font-size: 12px;
+    padding: 7px 5px;
+  }
+} /*599px 이하설정완료구간*/
+/* 태블릿구간 */
+@media (min-width: 768px) {
+} /*768px 이상설정완료구간*/
+
+/* PC용 구간 */
+@media (min-width: 960px) {
+}
